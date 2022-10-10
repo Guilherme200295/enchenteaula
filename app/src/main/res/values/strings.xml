@@ -3,4 +3,12 @@
     <string name="usuario">Usuario</string>
     <string name="senha">Senha</string>
     <string name="entrar">Entrar</string>
+    <string name="bairro">Bairro</string>
+    <string name="cabeceiras_do_rio">Cabeceiras do Rio</string>
+    <string name="cotas">Cotas</string>
+    <string name="rio_taquari">Rio Taquari</string>
+    <string name="anexar_fotos">Anexar fotos</string>
+    <string name="sos">SOS</string>
+    <string name="solicitar_remocao">Solicitar remoção!</string>
+
 </resources>

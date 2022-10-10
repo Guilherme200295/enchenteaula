@@ -11,22 +11,130 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/layoutImage"
-            android:layout_width="wrap_content"
+            android:id="@+id/layoutTopo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_centerHorizontal="true">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="280dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            <TextView
+                android:id="@+id/topo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="App Flood"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layoutCentro"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/layoutImage"
-            android:orientation="vertical"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutTopo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="SEJA BEM VINDO"
+                android:textColor="#050505"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textEscolha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="As informações obtidas nesse App correspondem aos Bairros: 21 de Abril, Centro e Loteamento. Utilize os botões para obter os dados." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutCentro"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonBairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bairro" />
+
+            <Button
+                android:id="@+id/buttonCabRio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cabeceiras_do_rio" />
+
+            <Button
+                android:id="@+id/buttonCotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cotas" />
+
+            <Button
+                android:id="@+id/buttonRio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rio_taquari" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <TextView
+                android:id="@+id/textInserir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/anexar_fotos" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonSos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+            <TextView
+                android:id="@+id/textSos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sos"
+                android:textAllCaps="true"
+                android:textColor="#AC1010"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ButtonRemocao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/sym_action_call" />
+
+            <TextView
+                android:id="@+id/textRemocao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/solicitar_remocao" />
+
+        </LinearLayout>
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
