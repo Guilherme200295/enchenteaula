@@ -1,40 +1,26 @@
 package com.example.appflood;
 
 public class BairroModel {
-    private int id;
+    private String cota;
     private String nome;
-    private Double atingidos;
-    private int id_cota;
+    private String atingidos;
 
-    public int getId() {
-        return id;
+    public String getCota() { return cota;}
+
+    public void setCota(String cota) { this.cota = cota; }
+
+    public String getNome() { return nome; }
+
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getAtingidos() { return atingidos; }
+
+    public void setAtingidos(String atingidos) { this.atingidos = atingidos; }
+
+    @Override
+    public String toString() {
+        return "nome: " + nome + "cota: " + cota + "atingidos: " + atingidos;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Double getAtingidos() {
-        return atingidos;
-    }
-
-    public void setAtingidos(Double atingidos) {
-        this.atingidos = atingidos;
-    }
-
-    public int getId_cota() {
-        return id_cota;
-    }
-
-    public void setId_cota(int id_cota) {
-        this.id_cota = id_cota;
-    }
 }
