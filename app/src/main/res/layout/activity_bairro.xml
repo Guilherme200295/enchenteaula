@@ -8,14 +8,16 @@
     android:layout_width="match_parent"
     tools:context=".Bairro">
 
-    <LinearLayout
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"/>
-
-    <Spinner
-        android:id="@+id/spinner"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lista dos Bairros com os dados"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/id_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

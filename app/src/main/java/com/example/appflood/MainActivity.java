@@ -9,9 +9,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +25,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Bairro.class);
-                startActivityForResult(intent, 22);
+                startActivity(intent);
+
+
             }
-        });
+
+            });
+
+
+
+
+
+
+        }
+
+
+
 
     }
 
-}
+
+
+
+
+
+
+
 
 
 

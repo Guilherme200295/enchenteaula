@@ -19,8 +19,7 @@ public class BairroModel {
 
     @Override
     public String toString() {
-        return "nome: " + nome + "cota: " + cota + "atingidos: " + atingidos;
+        return "Nome do Bairro: " + nome + "\n" + "Numero de atingidos: " + atingidos + "\n"  + "Cota: " + cota;
     }
-
 
 }

@@ -47,7 +47,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite o seu usuario:"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/text_senha"
@@ -64,7 +65,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite sua senha:"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btn_entrar"
