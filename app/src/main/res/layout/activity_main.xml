@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imagem"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -97,6 +98,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/anexar_fotos" />
+
+            <ImageView
+                android:id="@+id/imagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Foto tirada" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/ButtonSos"

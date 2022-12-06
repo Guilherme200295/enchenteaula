@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
                 usuario = (TextView) findViewById(R.id.usuario);
                 senha = (TextView) findViewById(R.id.senha);
 
-                if (usuario.getText().toString().equals("teste") && senha.getText().toString().equals("12345")) {
+                if (usuario.getText().toString().equals("guilherme") && senha.getText().toString().equals("12345")) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 } else {

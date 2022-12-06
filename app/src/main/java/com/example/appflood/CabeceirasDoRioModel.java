@@ -1,25 +1,15 @@
 package com.example.appflood;
 
 public class CabeceirasDoRioModel {
-    private int id;
-    private Double nivel;
+    private String nivel;
     private String cidade;
-    private Double hora_medicao;
-    private int id_cota;
+    private String hora_medicao;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Double getNivel() {
+    public String getNivel() {
         return nivel;
     }
 
-    public void setNivel(Double nivel) {
+    public void setNivel(String nivel) {
         this.nivel = nivel;
     }
 
@@ -31,20 +21,17 @@ public class CabeceirasDoRioModel {
         this.cidade = cidade;
     }
 
-    public Double getHora_medicao() {
+    public String getHora_medicao() {
         return hora_medicao;
     }
 
-    public void setHora_medicao(Double hora_medicao) {
+    public void setHora_medicao(String hora_medicao) {
         this.hora_medicao = hora_medicao;
     }
 
-    public int getId_cota() {
-        return id_cota;
-    }
-
-    public void setId_cota(int id_cota) {
-        this.id_cota = id_cota;
+    @Override
+    public String toString() {
+        return "Nível: " + nivel + "\n" + "Cidade: " + cidade + "\n"  + "Hora da medição: " + hora_medicao;
     }
 }
 
